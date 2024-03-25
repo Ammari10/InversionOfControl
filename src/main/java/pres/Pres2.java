@@ -17,9 +17,6 @@ import java.util.Scanner;
 public class Pres2 {
     public static void main(String[] args) throws FileNotFoundException, ClassNotFoundException, InstantiationException, IllegalAccessException, NoSuchMethodException, InvocationTargetException {
         Scanner scanner = new Scanner(new File("config.txt"));
-
-
-
         String daoClassName = scanner.nextLine(); // lire le premier ligne de texte  Le nom de la class.
         Class cDao = Class.forName(daoClassName);// tout les class charge au memoir sous form d un objet de type Class
       IDao dao =(IDao) cDao.newInstance(); //  il faut instance la class comme new

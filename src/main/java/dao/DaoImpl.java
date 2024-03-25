@@ -2,7 +2,7 @@ package dao;
 
 import org.springframework.stereotype.Component;
 
-@Component("dao2") // a chaque fois spring trouve une class a comance par component il va l instancie
+@Component("dao2") // a chaque fois spring trouve une class a commancer par component il va l instancie
 public class DaoImpl implements IDao {
     @Override
     public double getData() {
