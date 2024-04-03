@@ -2,6 +2,8 @@
 <h3> L’Inversion de contrôle :</h3>
 <p> • Permettre au développeur de s’occuper uniquement du code métier (Exigences fonctionnelles) et c’est le Framework qui s’occupe du code technique (Exigences Techniques)
 
+
+
 L’Injection des dépendances :
 • Une application doit évoluer dans le temps
 • L’application doit être fermée à la modification et ouverte à l’extension
@@ -12,6 +14,8 @@ Le Couplage faible :
 • Si la classe A est liée à l’interface IB par une association, on dit que le classe A et la classe B sont liées par un couplage faible.
 • Cela signifie que la classe B peut fonctionner avec n’importe quelle classe qui implémente l’interface IA.
 • En effet la classe B ne connait que l’interface IA. De ce fait n’importe quelle classe implémentant cette interface peut être associée à la classe B, sans qu’il soit nécéssaire de modifier quoi que se soit dans la classe B.</p>
+<h3> Exemple de couplage faible :</h3>
+<img src="Captures/6.png">
 
 <h3>L'interface daoInterface avec une méthode getDate</h3>
 

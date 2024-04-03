@@ -1,6 +1,7 @@
 package pres;
 
 import ext.DaoImpl2;
+import ext.DaoImplWVS;
 import metier.MetierImpl;
 
 public class Presentation {
@@ -13,7 +14,7 @@ public class Presentation {
          instanciation statique  ==> new = couplage fort
           */
          // anstanciation Statique.
-        DaoImpl2 dao =new DaoImpl2();
+        DaoImplWVS dao =new DaoImplWVS();
         MetierImpl metier=new MetierImpl(dao);
         metier.setDao(dao); // l'injection
         System.out.println("Resultat="+metier.calcul());
